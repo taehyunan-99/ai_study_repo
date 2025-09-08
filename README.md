@@ -5,7 +5,10 @@
 ## 📂 폴더 구조
 ```
 ai_study_repo/
-├── note/              # Jupyter Notebook 학습 파일
+├── note/              # Jupyter Notebook 학습 자료
+│   ├── 01_image_basic.ipynb
+│   ├── 02_video_basic.ipynb
+│   └── 03_edit_image_basic.ipynb
 ├── images/            # 예제 이미지 파일들
 ├── videos/            # 예제 비디오 파일들
 ├── output/            # 처리된 결과물 저장
