@@ -8,7 +8,8 @@ ai_study_repo/
 ├── note/              # Jupyter Notebook 학습 자료
 │   ├── 01_image_basic.ipynb
 │   ├── 02_video_basic.ipynb
-│   └── 03_edit_image_basic.ipynb
+│   ├── 03_edit_image_basic.ipynb
+│   └── 04_diagram.ipynb
 ├── images/            # 예제 이미지 파일들
 ├── videos/            # 예제 비디오 파일들
 ├── output/            # 처리된 결과물 저장
@@ -39,5 +40,15 @@ ai_study_repo/
 
 <br/>
 
+#### 도형 그리기
+- **선 그리기**: line() 함수를 이용한 직선 그리기
+- **원 그리기**: circle() 함수를 이용한 원 그리기 (속 채우기 옵션 포함)
+- **타원 그리기**: ellipse() 함수를 이용한 타원 그리기
+- **사각형 그리기**: rectangle() 함수를 이용한 사각형 그리기
+- **다각형 그리기**: polylines(), fillPoly() 함수를 이용한 다각형 그리기
+- **텍스트 그리기**: putText() 함수를 이용한 영문 텍스트 추가
+
+<br/>
+
 ---
-*마지막 업데이트: 2025-09-08*
+*마지막 업데이트: 2025-09-09*

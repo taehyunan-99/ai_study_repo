@@ -8,28 +8,26 @@
 
 ## 📂 폴더 구조
 ```
-python-study/
-├── DATA/              # Jupyter Notebook 학습 자료
-│   ├── 01_variable.ipynb
-│   ├── 02_data_type.ipynb
-│   ├── 03_operator.ipynb
-│   ├── 04_input.ipynb
-│   ├── 05_list.ipynb
-│   ├── 06_tuple.ipynb
-│   ├── 07_set.ipynb
-│   ├── 08_dictionary.ipynb
-│   ├── 09_if.ipynb
-│   ├── 10_for.ipynb
-│   ├── 11_while.ipynb
-│   ├── 12_function.ipynb
-│   ├── 13_class.ipynb
-│   ├── 14_module.ipynb
-│   ├── 15_file.ipynb
-│   ├── member.txt
-│   ├── member_tel.txt
-│   └── my_package/
-│       ├── calc.py    # 계산기 모듈
-│       └── hello.py   # 인사말 모듈
+project/
+├── docs/              # 학습 노트 및 정리
+│   ├── 01_topic1.md
+│   ├── 02_topic2.md
+│   └── images/
+├── examples/          # 예제 코드
+│   ├── basic/
+│   │   ├── example1.py
+│   │   └── example2.py
+│   └── advanced/
+├── exercises/         # 연습 문제 및 실습
+│   ├── problem1.py
+│   ├── problem2.py
+│   └── solutions/
+├── projects/          # 실제 프로젝트
+│   ├── project1/
+│   └── project2/
+├── resources/         # 참고 자료
+│   ├── references.md
+│   └── links.md
 └── README.md          # 프로젝트 개요
 ```
 
