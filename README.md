@@ -11,7 +11,9 @@ ai_study_repo/
 │   ├── 03_edit_image_basic.ipynb
 │   ├── 04_diagram.ipynb
 │   ├── 05_blur_binarization.ipynb
-│   └── 06_rotate_perspective.ipynb
+│   ├── 06_rotate_perspective.ipynb
+│   ├── 07_edge_detection.ipynb
+│   └── 08_contour.ipynb
 ├── images/            # 예제 이미지 파일들
 ├── videos/            # 예제 비디오 파일들
 ├── output/            # 처리된 결과물 저장
@@ -68,7 +70,7 @@ ai_study_repo/
 
 <br/>
 
-#### 기하학적 변환
+#### 이미지 변환
 - **회전**: 이미지 회전 변환
 - **원근 변환**: Perspective Transformation
 - **아핀 변환**: Affine Transformation
@@ -76,5 +78,21 @@ ai_study_repo/
 
 <br/>
 
+#### 경계선 검출
+- **Canny 알고리즘**: 경계선 검출을 위한 핵심 알고리즘
+- **임계값 설정**: 약한 경계와 강한 경계 임계값 조절
+- **트랙바 활용**: 실시간 임계값 조정으로 최적 파라미터 찾기
+- **실시간 처리**: 웹캠을 이용한 실시간 경계선 검출
+
+<br/>
+
+#### 윤곽선 처리
+- **윤곽선 검출**: findContours를 이용한 윤곽선 찾기
+- **윤곽선 그리기**: drawContours를 이용한 윤곽선 시각화
+- **이진화 전처리**: Threshold와 OTSU를 이용한 전처리
+- **윤곽선 분석**: 같은 색상 영역의 경계선 연결
+
+<br/>
+
 ---
-*마지막 업데이트: 2025-09-10*
+*마지막 업데이트: 2025-09-11*
