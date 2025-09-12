@@ -13,7 +13,10 @@ ai_study_repo/
 │   ├── 05_blur_binarization.ipynb
 │   ├── 06_rotate_perspective.ipynb
 │   ├── 07_edge_detection.ipynb
-│   └── 08_contour.ipynb
+│   ├── 08_contour.ipynb
+│   ├── 09_histogram_erode_dilate.ipynb
+│   └── 10_face_recognition.ipynb
+├── cascade/           # Haar Cascade 분류기 파일들
 ├── images/            # 예제 이미지 파일들
 ├── videos/            # 예제 비디오 파일들
 ├── output/            # 처리된 결과물 저장
@@ -22,7 +25,7 @@ ai_study_repo/
 
 ## 📂 학습 내용
 
-### 🖼️ OpenCV 기초
+### 🖼️ 이미지 기초
 #### 이미지 입출력
 - **이미지 불러오기**: 컬러, 그레이스케일, 투명도 옵션
 - **이미지 속성**: shape를 이용한 이미지 정보 확인
@@ -55,7 +58,7 @@ ai_study_repo/
 <br/>
 
 ### 🔍 이미지 처리 고급
-#### 블러(Blur) 처리
+#### 블러와 이진화
 - **기본 블러**: 이미지 흐릿하게 처리
 - **가우시안 블러**: 자연스러운 블러 효과
 - **모션 블러**: 움직임 효과 블러
@@ -63,14 +66,14 @@ ai_study_repo/
 
 <br/>
 
-#### 이진화(Binarization)
+#### 이진화 처리
 - **threshold**: 임계값을 이용한 이진화
 - **adaptive threshold**: 적응적 임계값 이진화
 - **OTSU 이진화**: 자동 임계값 결정
 
 <br/>
 
-#### 이미지 변환
+#### 이미지 회전과 원근 변환
 - **회전**: 이미지 회전 변환
 - **원근 변환**: Perspective Transformation
 - **아핀 변환**: Affine Transformation
@@ -86,7 +89,7 @@ ai_study_repo/
 
 <br/>
 
-#### 윤곽선 처리
+#### 윤곽선
 - **윤곽선 검출**: findContours를 이용한 윤곽선 찾기
 - **윤곽선 그리기**: drawContours를 이용한 윤곽선 시각화
 - **이진화 전처리**: Threshold와 OTSU를 이용한 전처리
@@ -94,5 +97,25 @@ ai_study_repo/
 
 <br/>
 
+#### 히스토그램, 팽창과 침식
+- **히스토그램**: 이미지의 색상 분포 분석
+- **Erosion**: 이미지 침식 연산으로 객체 축소
+- **Dilation**: 이미지 팽창 연산으로 객체 확장
+- **Opening**: 침식 후 팽창으로 노이즈 제거
+- **Closing**: 팽창 후 침식으로 구멍 채우기
+- **Morphological Gradient**: 팽창과 침식의 차이로 경계선 강조
+
+<br/>
+
+### 🤖 얼굴 인식
+#### Haar Cascade
+- **Haar Cascade**: 전통적인 얼굴 검출 알고리즘
+- **분류기 로드**: 사전 학습된 cascade 파일 사용
+- **검출 파라미터**: scaleFactor, minNeighbors 조정
+- **실시간 검출**: 웹캠을 이용한 실시간 얼굴 인식
+- **영역 표시**: 검출된 얼굴 영역에 사각형 그리기
+
+<br/>
+
 ---
-*마지막 업데이트: 2025-09-11*
+*마지막 업데이트: 2025-09-12*
