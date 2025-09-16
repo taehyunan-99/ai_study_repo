@@ -15,7 +15,9 @@ ai_study_repo/
 │   ├── 07_edge_detection.ipynb
 │   ├── 08_contour.ipynb
 │   ├── 09_histogram_erode_dilate.ipynb
-│   └── 10_face_recognition.ipynb
+│   ├── 10_face_recognition.ipynb
+│   ├── 11_yolo.ipynb
+│   └── 12_tesseract-ocr.ipynb
 ├── cascade/           # Haar Cascade 분류기 파일들
 ├── images/            # 예제 이미지 파일들
 ├── videos/            # 예제 비디오 파일들
@@ -118,5 +120,39 @@ ai_study_repo/
 
 <br/>
 
+### 🎯 객체 탐지 (YOLO)
+#### YOLO 모델
+- **YOLO 모델 로드**: ultralytics YOLO 모델 사용 (yolo11n.pt)
+- **이미지 객체 탐지**: 정적 이미지에서 객체 인식 및 분류
+- **신뢰도 설정**: conf 파라미터를 통한 탐지 임계값 조정
+- **결과 시각화**: 탐지된 객체에 바운딩 박스와 라벨 표시
+
+<br/>
+
+#### 동영상 객체 탐지
+- **비디오 파일 처리**: 동영상에서 실시간 객체 탐지
+- **웹캠 실시간 탐지**: 실시간 카메라 피드에서 객체 인식
+- **FPS 제어**: 비디오 프레임 속도에 맞춘 처리
+- **다중 객체 탐지**: 한 프레임에서 여러 객체 동시 탐지
+
+<br/>
+
+### 📝 텍스트 인식 (Tesseract OCR)
+#### OCR 기본 처리
+- **Tesseract OCR**: pytesseract를 이용한 텍스트 인식
+- **전처리**: 그레이스케일 변환 및 이진화 처리
+- **OTSU 이진화**: 자동 임계값으로 텍스트 인식률 향상
+- **언어 설정**: 영문 텍스트 인식 설정
+
+<br/>
+
+#### 원근 변환 OCR
+- **마우스 이벤트**: 클릭으로 텍스트 영역 4점 선택
+- **원근 변환**: getPerspectiveTransform으로 텍스트 영역 정규화
+- **실시간 인식**: 변환된 영역에서 즉시 텍스트 추출
+- **대화형 처리**: 사용자 인터페이스를 통한 직관적 텍스트 추출
+
+<br/>
+
 ---
-*마지막 업데이트: 2025-09-15*
+*마지막 업데이트: 2025-09-16*
